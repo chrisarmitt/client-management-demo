@@ -66,7 +66,7 @@ describe("Client API", () => {
   it("should fetch all clients", async () => {
     try {
       await Client.create(testUser);
-      const response = await request(app).get("/clients");
+      const response = await request(app).get("/client");
       expect(response.status).toBe(200);
       expect(response.body.length).toBeGreaterThan(0);
     } catch (error) {

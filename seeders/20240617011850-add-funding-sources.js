@@ -3,12 +3,13 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, _Sequelize) {
+    const date = new Date();
     return queryInterface.bulkInsert("FundingSources", [
-      { name: "NDIS", createdAt: new Date(), updatedAt: new Date() },
-      { name: "HCP", createdAt: new Date(), updatedAt: new Date() },
-      { name: "CHSP", createdAt: new Date(), updatedAt: new Date() },
-      { name: "DVA", createdAt: new Date(), updatedAt: new Date() },
-      { name: "HACC", createdAt: new Date(), updatedAt: new Date() },
+      { name: "NDIS", createdAt: date, updatedAt: date },
+      { name: "HCP", createdAt: date, updatedAt: date },
+      { name: "CHSP", createdAt: date, updatedAt: date },
+      { name: "DVA", createdAt: date, updatedAt: date },
+      { name: "HACC", createdAt: date, updatedAt: date },
     ]);
   },
 
