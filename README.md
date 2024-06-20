@@ -2,7 +2,9 @@
 
 ## Overview
 
-Backend (express js) repo
+Backend (express js) repo. To be run in conjunction with FE [react-client-management-demo](https://github.com/chrisarmitt/react-client-management-demo)
+
+Runs on PORT 5000 by default
 
 ## Setup
 
