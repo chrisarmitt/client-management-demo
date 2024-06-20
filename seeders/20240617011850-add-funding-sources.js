@@ -4,6 +4,10 @@
 module.exports = {
   async up(queryInterface, _Sequelize) {
     const date = new Date();
+
+    // clear table before re-seeding
+    await queryInterface.bulkDelete("FundingSources", null, {});
+
     return queryInterface.bulkInsert("FundingSources", [
       { name: "NDIS", createdAt: date, updatedAt: date },
       { name: "HCP", createdAt: date, updatedAt: date },
